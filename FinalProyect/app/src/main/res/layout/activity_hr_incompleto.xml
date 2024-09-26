@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HRincompletoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HR Incompleto"
+            android:textSize="30dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <!-- Fecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha: " />
+
+            <Button
+                android:id="@+id/bFecha"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:text="Fecha" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eFecha"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Fecha"
+            android:visibility="visible" />
+
+        <!-- Hora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:text="Hora: " />
+
+            <Button
+                android:id="@+id/bHora"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:text="Hora" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eHora"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Hora"
+            android:visibility="visible" />
+
+        <!-- Encargado -->
+        <EditText
+            android:id="@+id/eEncargado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Encargado" />
+
+        <!-- Botón de firma -->
+        <Button
+            android:id="@+id/btnFirma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Agregar Firma" />
+
+        <!-- Botón para crear PDF -->
+        <Button
+            android:id="@+id/btnCrearPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Crear PDF" />
+    </LinearLayout>
+</ScrollView>

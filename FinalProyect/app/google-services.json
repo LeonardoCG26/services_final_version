@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "547531537672",
+    "project_id": "hojadeservicio-83caf",
+    "storage_bucket": "hojadeservicio-83caf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547531537672:android:555358d987745717be00bd",
+        "android_client_info": {
+          "package_name": "com.example.hojadeservicio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNwGV2rbBVCbhhlF13Z4Y-qLJm121pxL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recepción del servicio"
+            android:textSize="30dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <!-- Fecha de solicitud -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fecha_soli"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha de solicitud: " />
+
+            <Button
+                android:id="@+id/bFecha"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:text="Fecha" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eFecha"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Fecha"
+            android:visibility="visible" />
+
+        <!-- Fecha de atención -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:text="Fecha de atención: " />
+
+            <Button
+                android:id="@+id/bFechaAtencion"
+                android:layout_width="154dp"
+                android:layout_height="match_parent"
+                android:text="Fecha" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eFechaAtencion"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Fecha"
+            android:visibility="visible" />
+
+        <!-- Hora de llegada -->
+        <LinearLayout
+            android:layout_width="352dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:text="Hora de llegada" />
+
+            <Button
+                android:id="@+id/bHora"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:text="Hora" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eHora"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Hora" />
+
+        <!-- Hora de salida -->
+        <LinearLayout
+            android:layout_width="352dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewHoraSalida"
+                android:layout_width="185dp"
+                android:layout_height="wrap_content"
+                android:text="Hora de salida" />
+
+            <Button
+                android:id="@+id/bHoraSalida"
+                android:layout_width="165dp"
+                android:layout_height="match_parent"
+                android:text="Hora" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/eHoraSalida"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Hora" />
+
+        <!-- Facultad -->
+        <LinearLayout
+            android:layout_width="373dp"
+            android:layout_height="72dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewFacultad"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Facultad:"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="256dp"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp"
+                android:hint="@string/select">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txt_facultad"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- Campus -->
+        <EditText
+            android:id="@+id/Campus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Campus" />
+
+        <!-- Dependencia -->
+        <EditText
+            android:id="@+id/Dependencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Dependencia" />
+
+        <!-- Edificio -->
+        <EditText
+            android:id="@+id/Edificio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Edificio, Área" />
+
+        <!-- Área -->
+        <EditText
+            android:id="@+id/Area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Área" />
+
+        <!-- Encargado de área -->
+        <EditText
+            android:id="@+id/EncargadoAr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Encargado de área" />
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/Telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Teléfono"
+            android:inputType="number" />
+
+        <!-- Atendió -->
+        <EditText
+            android:id="@+id/Atendio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Atendió" />
+
+        <!-- Calificación del servicio -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calificar calidad del servicio recibido:" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupCalidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBueno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bueno" />
+
+            <RadioButton
+                android:id="@+id/radioMalo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malo" />
+
+            <RadioButton
+                android:id="@+id/radioRegular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regular" />
+        </RadioGroup>
+
+        <!-- Botón siguiente -->
+        <Button
+            android:id="@+id/btnNext1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Siguiente" />
+    </LinearLayout>
+</ScrollView>
+
+
+
